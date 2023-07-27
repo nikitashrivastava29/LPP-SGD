@@ -8,3 +8,6 @@ def get_dataloader(args, trainonly=False, testonly=False):
     elif args.dataset == 'imagenet':
         from .data_loader_imagenet import get_dataloader
         return get_dataloader(args, testonly, trainonly)
+    elif args.datatset == 'ucf101':
+        from .data_loader_ucf101 import get_dataloader
+        return get_dataloader(args, testonly, trainonly)
