@@ -4,8 +4,8 @@ from torchvision import transforms
 from torchvision import datasets
 from torchvision.datasets import UCF101
 
-ucf_label_dir= r"TrainTestSplits-RecognitionTask\ucfTrainTestlist"
-ucf_data_dir= r"C:\Users\6102\OneDrive\Desktop\New folder\UCF101\UCF-101"
+ucf_label_dir= r"dataloaders/labels"
+ucf_data_dir= r"dataloaders/ApplyEyeMakeup"
 
 frames_per_clip=5
 step_between_clips=1
