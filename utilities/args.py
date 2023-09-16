@@ -269,13 +269,13 @@ def add_common_args(parser):
             'efficientnetb2', 'efficientnetb3', 'wnet34', 'wnet50', 'wnet22',
             'wnet28', 'wnet168', 'rnet18x2', 'rnet50x2', 'densenet121',
             'mobilenetv2', 'mobilenetv3l', 'mobilenetv3s', 'shufflenet',
-            'resnext50', 'densenet169', 'squuezenet', 'nasnet'
+            'resnext50', 'densenet169', 'squuezenet', 'nasnet', 'CNNGRU'
         ])
     common_parser.add_argument(
         '--dataset',
         default='cifar10',
         help='Dataset type',
-        choices=['cifar10', 'cifar100', 'mnist', 'imagenet', 'catdog'])
+        choices=['cifar10', 'cifar100', 'mnist', 'imagenet', 'catdog', 'ucf101'])
     common_parser.add_argument('--num-classes',
                                type=int,
                                default=1000,
