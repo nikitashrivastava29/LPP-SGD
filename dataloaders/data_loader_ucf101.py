@@ -1,4 +1,4 @@
-pip install av
+!pip install av
 import torch
 from torchvision import transforms
 from torchvision import datasets
